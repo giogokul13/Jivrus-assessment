@@ -1,0 +1,39 @@
+.main-div{
+    margin : 100px 100px 0 200px;
+    width: 60%;
+    height: 700px;
+    border-style: solid;
+    border-color: aqua;
+    text-align: center;
+}
+
+.sub-div{
+    height: 70px;
+    background: red;
+    font-size: 40px;
+    color: white;
+}
+.table{
+    margin: 35px 30px 100px 200px;
+}
+.right { 
+    color: green;   
+   }
+   .wrong {
+    color: red;   
+   }
+.subtable{
+    padding-left: 150px;
+}
+.main-content{
+    padding-bottom: 150px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.tablediv{
+    margin-bottom: 40px;
+}

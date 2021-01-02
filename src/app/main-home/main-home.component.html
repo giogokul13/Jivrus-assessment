@@ -1,1 +1,55 @@
-<p>main-home works!</p>
+<div class="main-div">
+    <div class="sub-div">
+        Course and Students Maintenance
+    </div>
+    <div class="table">
+        <table>
+            <div class="main-content">
+                <tr>
+                    <td class="title">Course</td>
+                    <div class="subtable">
+                        <td>
+                            <tr>
+                                <select name="course" id="course">
+                                    
+                                </select>
+                            </tr>
+                            <tr>
+                                <button type="button" class="btn btn-primary btn-sm mt-2 mb-2" (click)="addcourse()">Add New Course</button>
+                            </tr>
+                            <tr>
+                                <div *ngIf="iscoursedisplay" class="showcourse">
+                                <input type="text" [(ngmodel)]= "courseValue" id="courseValue" name="courseValue">
+                                <p class='right'  (click) = "addcourselist()">&#10004;</p>
+                                <p class='wrong' (click)="chide()" >&#10006;</p>
+                                </div>
+                            </tr>
+                        </td>
+                    </div>
+                </tr>
+            </div>
+            <div class="main-content">
+                <tr>
+                    <td class="title">Students</td>
+                        <div class="subtable">
+                            <td>
+                                <tr>
+                                    <select name="student" id="student"></select>
+                                </tr>
+                                <tr>
+                                    <button type="button" class="btn btn-primary btn-sm mt-2 mb-2" (click)="addstudent()">Add Student</button>
+                                </tr>
+                                <tr>
+                                    <div *ngIf="isstudentdisplayed" class="showstudents">
+                                    <input type="text" [(ngModel)] = "studentValue" id="studentValue" name="studentvalue">
+                                    <p class='right' (click) = "addstudentlist()" >&#10004;</p>
+                                    <p class='wrong' (click) = "shide()" >&#10006;</p>
+                                </div>
+                                </tr>
+                            </td>
+                        </div>
+                </tr>
+            </div>
+        </table>
+    </div>
+</div>
