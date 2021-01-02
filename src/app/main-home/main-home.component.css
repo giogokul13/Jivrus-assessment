@@ -1,10 +1,14 @@
 .main-div{
-    margin : 100px 100px 0 200px;
+    margin : 100px 100px 0 250px;
     width: 60%;
     height: 700px;
     border-style: solid;
-    border-color: aqua;
+    border-color: rgb(53, 168, 235);
     text-align: center;
+    font-family: sans-serif
+}
+select{
+    width: 100px;
 }
 
 .sub-div{

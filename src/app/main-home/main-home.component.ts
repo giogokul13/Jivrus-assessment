@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainHomeComponent implements OnInit {
  iscoursedisplay =  false ; isstudentdisplayed =  false;
+ isCourseSelected = true ;
  coursearray : Array<String> = [];
  studentarray : Array<String> = [];
  courseName;
@@ -21,6 +22,10 @@ export class MainHomeComponent implements OnInit {
   }
   addstudent(){
     this.isstudentdisplayed = true
+  }
+
+  selectChangeCourse(){
+    this.isCourseSelected = false
   }
 
   chide(){

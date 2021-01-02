@@ -10,7 +10,7 @@
                     <div class="subtable">
                         <td>
                             <tr>
-                                <select id="course">   
+                                <select id="course"[(ngModel)]="courseSelect" (change)="selectChangeCourse()">   
                                     <option *ngFor="let course of coursearray">
                                         {{course}}
                                       </option>
@@ -43,7 +43,7 @@
                                     </select>
                                 </tr>
                                 <tr>
-                                    <button type="button" class="btn btn-primary btn-sm mt-2 mb-2" (click)="addstudent()">Add Student</button>
+                                    <button [hidden]="isCourseSelected"  type="button" class="btn btn-primary btn-sm mt-2 mb-2" (click)="addstudent()">Add Student</button>
                                 </tr>
                                 <tr>
                                     <div *ngIf="isstudentdisplayed" class="showstudents">
