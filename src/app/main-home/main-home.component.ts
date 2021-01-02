@@ -7,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainHomeComponent implements OnInit {
  iscoursedisplay =  false ; isstudentdisplayed =  false;
+ coursearray : Array<String> = [];
+ studentarray : Array<String> = [];
+ courseName;
+ studentName;
+ studentDname : String ;
+ courseDname : String;
+
   constructor() { }
   
   addcourse(){
-    console.log('showcourse');
     this.iscoursedisplay = true
   }
   addstudent(){
@@ -22,6 +28,22 @@ export class MainHomeComponent implements OnInit {
   }
   shide(){
     this.isstudentdisplayed = false;
+  }
+
+  addcourselist(){
+    this.courseDname = this.courseName
+    this.coursearray.push(this.courseDname);
+    console.log(this.coursearray);
+    this.courseName = ' ';
+    this.chide();
+  }
+
+  addstudentlist(){
+    this.studentDname = this.studentName
+    this.studentarray.push(this.studentDname);
+    console.log(this.studentarray);
+    this.studentName = ' ';
+    this.shide();
   }
 
 
