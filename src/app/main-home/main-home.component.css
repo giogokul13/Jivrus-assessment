@@ -1,7 +1,7 @@
 .main-div{
-    margin : 100px 100px 0 250px;
-    width: 60%;
-    height: 700px;
+    margin : 100px 100px 0 300px;
+    width: 50%;
+    height: 600px;
     border-style: solid;
     border-color: rgb(53, 168, 235);
     text-align: center;
@@ -9,8 +9,8 @@
 }
 select{
     width: 100px;
+    background-color: rgb(145, 224, 255)
 }
-
 .sub-div{
     height: 70px;
     background: red;
@@ -22,12 +22,13 @@ select{
 }
 .right { 
     color: green;   
+    size: 23px;
    }
-   .wrong {
+.wrong {
     color: red;   
-   }
+}
 .subtable{
-    padding-left: 150px;
+    padding-left: 100px;
 }
 .main-content{
     padding-bottom: 150px;
