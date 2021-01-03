@@ -1,6 +1,9 @@
 {
   "name": "jivrus-assessment",
   "version": "0.0.0",
+  "engines": {
+    "node": "12.19.0"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
